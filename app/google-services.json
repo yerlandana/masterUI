@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "551019023951",
+    "project_id": "masterui",
+    "storage_bucket": "masterui.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551019023951:android:757268fd8b8f7cfe47643a",
+        "android_client_info": {
+          "package_name": "com.example.m"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551019023951-8cfv5stfb57icpboe32koqmfj64sb923.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9Bw5rI1eQeOXvwXAuDfaCCQ-8DCKksws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551019023951-8cfv5stfb57icpboe32koqmfj64sb923.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
