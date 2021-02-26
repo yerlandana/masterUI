@@ -40,4 +40,31 @@
         android:padding="10dp"
         android:layout_gravity="center_horizontal"
         />
+
+    <Button
+        android:id="@+id/showBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show list"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/themeChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change theme"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/themeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change theme"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        />
 </LinearLayout>
