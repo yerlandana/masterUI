@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatDialog;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements ExampleDialog.Sin
     ProgressDialog pd;
     private FirebaseFirestore db;
     private static final String TAG = "MainActvity";
+    ExampleDialog exampleDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements ExampleDialog.Sin
         setContentView(R.layout.activity_main);
 
         initViews();
-
     }
 
     private void initViews() {
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements ExampleDialog.Sin
     }
 
     private void openDialog() {
-        ExampleDialog exampleDialog = new ExampleDialog();
+        exampleDialog = new ExampleDialog();
         exampleDialog.setCancelable(false);
         exampleDialog.show(getSupportFragmentManager(), "example dialog");
     }
@@ -107,6 +108,7 @@ public class MainActivity extends AppCompatActivity implements ExampleDialog.Sin
             Log.d("Main", list[position]);
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
         }
+        exampleDialog.dismiss();
     }
 
     @Override
